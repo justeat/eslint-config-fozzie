@@ -1,6 +1,6 @@
 {
   "name": "@justeat/eslint-config-fozzie",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Just Eat's JS ESLint config, which follows our styleguide",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.je-labs.com/UI/eslint-config-fozzie"
+    "url": "https://github.com/justeat/eslint-config-fozzie"
   },
   "keywords": [
     "eslint",
