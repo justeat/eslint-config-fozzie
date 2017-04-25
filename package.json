@@ -1,0 +1,60 @@
+{
+  "name": "@justeat/eslint-config-fozzie",
+  "version": "0.1.0",
+  "description": "Just Eat's JS ESLint config, which follows our styleguide",
+  "main": "index.js",
+  "scripts": {
+    "prelint": "editorconfig-tools check * rules/* test/*",
+    "lint": "eslint .",
+    "tests-only": "babel-tape-runner ./test/test-*.js",
+    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent tests-only",
+    "travis": "npm run --silent test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.je-labs.com/UI/eslint-config-fozzie"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "justeat",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Ashley Nolan (https://twitter.com/AshNolan_)",
+  "contributors": [
+  	{
+      "name": "Ashley Nolan",
+      "url": "https://twitter.com/AshNolan_"
+    }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.je-labs.com/UI/eslint-config-fozzie/issues"
+  },
+  "homepage": "https://github.je-labs.com/UI/eslint-config-fozzie",
+  "dependencies": {
+    "eslint-config-airbnb-base": "^11.1.2"
+  },
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.2.3",
+    "babel-tape-runner": "^2.0.1",
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^3.19.0",
+    "eslint-find-rules": "^1.14.3",
+    "eslint-plugin-import": "^2.2.0",
+    "in-publish": "^2.0.0",
+    "safe-publish-latest": "^1.1.1",
+    "tape": "^4.6.3"
+  },
+  "peerDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}
