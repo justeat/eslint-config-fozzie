@@ -1,5 +1,5 @@
 # eslint-config-fozzie
-[![npm version](https://badge.fury.io/js/eslint-config-fozzie.svg)](http://badge.fury.io/js/eslint-config-fozzie)
+[![npm version](https://badge.fury.io/js/%40justeat%2Feslint-config-fozzie.svg)](https://badge.fury.io/js/%40justeat%2Feslint-config-fozzie)
 
 This package provides Just Eat's base JS .eslintrc as an extensible shared config.
 
@@ -46,7 +46,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+. It
   npm install --save-dev @justeat/eslint-config-fozzie eslint@^#.#.# eslint-plugin-import@^#.#.#
   ```
 
-2. Add `"extends": "fozzie"` to your .eslintrc
+2. Add `"extends": "@justeat/eslint-config-fozzie"` to your .eslintrc
 
 
 ## Testing
