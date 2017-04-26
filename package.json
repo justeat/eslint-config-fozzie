@@ -33,9 +33,9 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.je-labs.com/UI/eslint-config-fozzie/issues"
+    "url": "https://github.com/justeat/eslint-config-fozzie/issues"
   },
-  "homepage": "https://github.je-labs.com/UI/eslint-config-fozzie",
+  "homepage": "https://github.com/justeat/eslint-config-fozzie",
   "dependencies": {
     "eslint-config-airbnb-base": "^11.1.2"
   },
