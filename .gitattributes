@@ -7,9 +7,10 @@
 *.erb text
 *.feature text
 *.json text
+LICENSE text eol=crlf
 *.markdown text
 *.md text
-*.rake text
+*.rake text eol=crlf
 *.rb text
 *.sublime-project text
 *.tenjin text
@@ -19,6 +20,7 @@
 # Declare files that will always have CRLF line endings on checkout.
 *.sln text eol=crlf
 *.css text eol=lf
+*.js text eol=crlf
 
 # Denote all files that are truly binary and should not be modified.
 *.dll binary
