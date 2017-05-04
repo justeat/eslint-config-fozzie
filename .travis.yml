@@ -1,0 +1,17 @@
+sudo: false
+
+git:
+  depth: 1
+
+branches:
+  only:
+    - master
+
+language: node_js
+
+node_js: '6'
+
+cache: yarn
+
+script:
+  - yarn travis

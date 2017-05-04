@@ -7,10 +7,10 @@
     "prelint": "editorconfig-tools check * rules/* test/*",
     "lint": "eslint .",
     "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
-    "pretest": "npm run --silent lint",
-    "test": "npm run --silent tests-only",
-    "travis": "npm run --silent test"
+    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || yarn test) && safe-publish-latest",
+    "pretest": "yarn run --silent lint",
+    "test": "yarn run --silent tests-only",
+    "travis": "yarn run --silent test"
   },
   "repository": {
     "type": "git",
