@@ -37,7 +37,7 @@ module.exports = {
 
         // disallow mixed 'LF' and 'CRLF' as linebreaks
         // http://eslint.org/docs/rules/linebreak-style
-        'linebreak-style': ['error', 'windows'],
+        'linebreak-style': ['error', 'linux'],
 
         // specify the maximum length of a line in your program
         // http://eslint.org/docs/rules/max-len

@@ -8,9 +8,9 @@
     "lint": "eslint .",
     "tests-only": "babel-tape-runner ./test/test-*.js",
     "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || yarn test) && safe-publish-latest",
-    "pretest": "yarn run --silent lint",
-    "test": "yarn run --silent tests-only",
-    "travis": "yarn run --silent test"
+    "pretest": "yarn run lint",
+    "test": "yarn run tests-only",
+    "travis": "yarn run test"
   },
   "repository": {
     "type": "git",
