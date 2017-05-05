@@ -1,5 +1,8 @@
 sudo: false
 
+notifications:
+  email: false
+
 git:
   depth: 1
 
