@@ -1,6 +1,6 @@
 {
   "name": "@justeat/eslint-config-fozzie",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Just Eat's JS ESLint config, which follows our styleguide",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   ],
   "author": "Ashley Nolan (https://twitter.com/AshNolan_)",
   "contributors": [
-  	{
+    {
       "name": "Ashley Nolan",
       "url": "https://twitter.com/AshNolan_"
     }
