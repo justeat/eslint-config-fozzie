@@ -1,5 +1,6 @@
 # eslint-config-fozzie
 [![npm version](https://badge.fury.io/js/%40justeat%2Feslint-config-fozzie.svg)](https://badge.fury.io/js/%40justeat%2Feslint-config-fozzie)
+[![Build Status](https://travis-ci.org/justeat/eslint-config-fozzie.svg?branch=master)](https://travis-ci.org/justeat/eslint-config-fozzie)
 
 This package provides Just Eat's base JS .eslintrc as an extensible shared config.
 
