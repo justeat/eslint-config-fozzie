@@ -1,6 +1,6 @@
 {
   "name": "@justeat/eslint-config-fozzie",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Just Eat's JS ESLint config, which follows our styleguide",
   "main": "index.js",
   "scripts": {
@@ -24,12 +24,9 @@
     "javascript",
     "styleguide"
   ],
-  "author": "Ashley Nolan (https://twitter.com/AshNolan_)",
   "contributors": [
-    {
-      "name": "Ashley Nolan",
-      "url": "https://twitter.com/AshNolan_"
-    }
+    "Ashley Nolan <ashley.nolan@just-eat.com> (https://twitter.com/AshNolan_)",
+    "Damian Mullins <damian.mullins@just-eat.com>"
   ],
   "license": "Apache-2.0",
   "bugs": {
@@ -37,21 +34,21 @@
   },
   "homepage": "https://github.com/justeat/eslint-config-fozzie",
   "dependencies": {
-    "eslint-config-airbnb-base": "^11.1.2"
+    "eslint-config-airbnb-base": "^11.2.0"
   },
   "devDependencies": {
     "babel-preset-airbnb": "^2.2.3",
     "babel-tape-runner": "^2.0.1",
     "editorconfig-tools": "^0.1.1",
-    "eslint": "^3.19.0",
-    "eslint-find-rules": "^1.14.3",
+    "eslint": "^4.1.1",
+    "eslint-find-rules": "^3.1.1",
     "eslint-plugin-import": "^2.2.0",
     "in-publish": "^2.0.0",
     "safe-publish-latest": "^1.1.1",
     "tape": "^4.6.3"
   },
   "peerDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^4.1.1",
     "eslint-plugin-import": "^2.2.0"
   },
   "engines": {
