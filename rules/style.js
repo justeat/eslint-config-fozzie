@@ -99,6 +99,6 @@ module.exports = {
             }
         }],
 
-        'switch-colon-spacing': ['error', {'after': true, 'before': false}]
+        'switch-colon-spacing': ['error', { after: true, before: false }]
     }
 };
