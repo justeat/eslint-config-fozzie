@@ -1,6 +1,6 @@
 {
   "name": "@justeat/eslint-config-fozzie",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Just Eat's JS ESLint config, which follows our styleguide",
   "main": "index.js",
   "scripts": {
