@@ -1,10 +1,10 @@
 module.exports = {
     rules: {
-        "import/no-unresolved": [
-            "error",
+        'import/no-unresolved': [
+            'error',
             {
-                "commonjs": true,
-                "caseSensitive": false
+                commonjs: true,
+                caseSensitive: false
             }
         ]
     }
