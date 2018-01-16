@@ -4,22 +4,38 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
-[1.2.0] - 2017-08-02
+v1.3.0
 ------------------------------
+*January 16 2018*
+
+### Added
+- Added imports override file.
+- Added override for the `import/no-unresolved` case sensistivity.
+
+### Changed
+- Updated changelog format to match other fozzie modules.
+
+
+v1.2.0
+------------------------------
+*August 02 2017*
 
 ### Changed
 - Added expected environments to the eslint config so that it doesn’t complain about using globally accessible variables such as `window` and `document`
 - Improved `CHANGELOG` (Changelog inception…spooky 👻)
 
-[1.1.0] - 2017-07-19
+
+v1.1.0
 ------------------------------
+*July 19 2017*
 
 ### Changed
 - Turning off the `linebreak-style` rule as was causing lots of warnings across different environments (with little value)
 
 
-[1.0.0] - 2017-06-28
+v1.0.0
 ------------------------------
+*June 28 2017*
 
 ### Changed
 - Updating `prepublish` to `prepublishOnly` in line with latest NPM API changes.
@@ -35,7 +51,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `'switch-colon-spacing': ['error', {'after': true, 'before': false}]` – [docs](http://eslint.org/docs/rules/switch-colon-spacing)
 
 
-
-[0.1.0] - 2017-04-20
+v0.1.0
 ------------------------------
+*April 20 2017*
+
  - Initial commmit; reused base structure from Airbnb’s `eslint-config-airbnb-base` package, extended their base config and added in overrides for rules that we wanted to specify.
