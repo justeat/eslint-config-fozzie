@@ -3,6 +3,14 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+v2.0.1
+------------------------------
+*July 13 2018*
+
+### Fixed
+- Added rule that changes `function-paren-newline` back to `multiline` (as this was changed by airbnb-config-eslint-base in it's latest update)
+
+
 v2.0.0
 ------------------------------
 *July 13 2018*
