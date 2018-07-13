@@ -15,6 +15,8 @@ v2.0.0
 
 ### Added
 - `operator-linebreak` rule added (overrides base Airbnb setting)
+- `max-classes-per-file` errors if over 1 reference
+- `prefer-object-spread` enabled
 
 ### Removed
 - Rule for padding block code removed – will truncate all functions and tests.

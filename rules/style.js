@@ -51,6 +51,8 @@ module.exports = {
             ignoreTemplateLiterals: true
         }],
 
+        'max-lines-per-function': 'off',
+
         // enforces new line after each method call in the chain to make it
         // more readable and easy to maintain
         // http://eslint.org/docs/rules/newline-per-chained-call
@@ -75,6 +77,8 @@ module.exports = {
         'operator-linebreak': ['off'],
 
         'padding-line-between-statements': 'off',
+
+        'prefer-object-spread': 'error',
 
         // require or disallow space before function opening parenthesis
         // http://eslint.org/docs/rules/space-before-function-paren

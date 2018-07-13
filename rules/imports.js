@@ -6,6 +6,8 @@ module.exports = {
                 commonjs: true,
                 caseSensitive: false
             }
-        ]
+        ],
+
+        'import/no-relative-parent-imports': 'off'
     }
 };
