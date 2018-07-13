@@ -1,6 +1,6 @@
 {
   "name": "@justeat/eslint-config-fozzie",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Just Eat's JS ESLint config, which follows our styleguide",
   "main": "index.js",
   "scripts": {
@@ -33,22 +33,22 @@
   },
   "homepage": "https://github.com/justeat/eslint-config-fozzie",
   "dependencies": {
-    "eslint-config-airbnb-base": "^11.2.0"
+    "eslint-config-airbnb-base": "^13.0.0"
   },
   "devDependencies": {
-    "babel-preset-airbnb": "^2.2.3",
+    "babel-preset-airbnb": "^2.5.1",
     "babel-tape-runner": "^2.0.1",
-    "danger": "^3.0.5",
+    "danger": "^3.7.20",
     "editorconfig-tools": "^0.1.1",
-    "eslint": "^4.1.1",
-    "eslint-find-rules": "^3.1.1",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint": "^5.1.0",
+    "eslint-find-rules": "^3.3.1",
+    "eslint-plugin-import": "^2.13.0",
     "in-publish": "^2.0.0",
     "safe-publish-latest": "^1.1.1",
-    "tape": "^4.6.3"
+    "tape": "^4.9.1"
   },
   "peerDependencies": {
-    "eslint": "^4.1.1",
+    "eslint": "^5.0.1",
     "eslint-plugin-import": "^2.2.0"
   },
   "engines": {

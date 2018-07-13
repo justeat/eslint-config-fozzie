@@ -3,6 +3,23 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+v2.0.0
+------------------------------
+*July 13 2018*
+
+### Changed
+- Upgraded to `eslint` v5 and `eslint-config-airbnb-base` v13.
+- Updated peerDependency to v5.0.1 of eslint
+- Parser options updated to use ecmaVersion 2018
+- Updated all other packages
+
+### Added
+- `operator-linebreak` rule added (overrides base Airbnb setting)
+
+### Removed
+- Rule for padding block code removed – will truncate all functions and tests.
+- Removed experimental object rest option in config.  Deprecated in eslint v5.
+
 
 v1.4.0
 ------------------------------
