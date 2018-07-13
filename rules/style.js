@@ -71,8 +71,8 @@ module.exports = {
         // allow single or multiple var statements per function
         'one-var': 'off',
 
-        // ignore padding within blocks of code
-        'padded-blocks': 'off',
+        // https://eslint.org/docs/rules/operator-linebreak
+        'operator-linebreak': ['off'],
 
         'padding-line-between-statements': 'off',
 
