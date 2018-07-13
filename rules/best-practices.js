@@ -3,6 +3,8 @@ module.exports = {
         // require default case in switch statements
         'default-case': ['error', { commentPattern: '^no default$' }],
 
+        'max-classes-per-file': ['error'],
+
         // disallow reassignments of native objects or read-only globals
         // http://eslint.org/docs/rules/no-global-assign
         'no-global-assign': ['error', { exceptions: [] }],
