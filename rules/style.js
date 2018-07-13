@@ -10,6 +10,8 @@ module.exports = {
         // http://eslint.org/docs/rules/comma-dangle
         'comma-dangle': ['error', 'never'],
 
+        'function-paren-newline': ['error', 'multiline'],
+
         // this option sets a specific tab width for your code
         // http://eslint.org/docs/rules/indent
         indent: ['error', 4, {
