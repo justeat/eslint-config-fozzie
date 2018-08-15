@@ -26,7 +26,7 @@ module.exports = {
 
         // Do not restrict else if statements
         // It was causing a bug when auto fix is correcting the code
-        'no-else-return': ['error', { 
+        'no-else-return': ['error', {
             allowElseIf: true
         }]
     }
