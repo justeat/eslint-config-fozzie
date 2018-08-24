@@ -22,6 +22,12 @@ module.exports = {
             allowShortCircuit: false,
             allowTernary: false,
             allowTaggedTemplates: false
+        }],
+
+        // Do not restrict else if statements
+        // It was causing a bug when auto fix is correcting the code
+        'no-else-return': ['error', {
+            allowElseIf: true
         }]
     }
 };
