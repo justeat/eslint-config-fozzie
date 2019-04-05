@@ -8,6 +8,8 @@ module.exports = {
             }
         ],
 
-        'import/no-relative-parent-imports': 'off'
+        'import/no-relative-parent-imports': 'off',
+
+        'import/no-named-export': 'off'
     }
 };

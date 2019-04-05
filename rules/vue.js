@@ -1,0 +1,75 @@
+module.exports = {
+    rules: {
+        'vue/array-bracket-spacing': ['error', 'never'],
+
+        'vue/arrow-spacing': ['error', { before: true, after: true }],
+
+        'vue/block-spacing': ['error', 'always'],
+
+        'vue/brace-style': ['error', '1tbs', { allowSingleLine: true }],
+
+        'vue/camelcase': ['error', { properties: 'never' }],
+
+        'vue/comma-dangle': ['error', 'never'],
+
+        // Use kebab-case for Vue component names, as then in-line with the
+        // HTML custom elements spec (which requires that a dash is included in the name)
+        'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+
+        'vue/eqeqeq': ['error', 'always', { null: 'ignore' }],
+
+        'vue/html-closing-bracket-newline': 'off',
+
+        'vue/html-indent': ['error', 4],
+
+        'vue/key-spacing': ['error', {
+            beforeColon: false,
+            afterColon: true,
+            mode: 'minimum'
+        }],
+
+        'vue/match-component-file-name': 'off',
+
+        // https://github.com/vuejs/eslint-plugin-vue/blob/master/docs/rules/no-boolean-default.md
+        'vue/no-boolean-default': 'off',
+
+        // Copy of baseAIrbnb restricted-syntax ruleset
+        // https://github.com/airbnb/javascript/blob/b85baeafed8b66fdd9756439a0b8774860147913/packages/eslint-config-airbnb-base/rules/style.js#L332-L352
+        'vue/no-restricted-syntax': [
+            'error',
+            {
+                selector: 'ForInStatement',
+                message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.'
+            },
+            {
+                selector: 'ForOfStatement',
+                message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.'
+            },
+            {
+                selector: 'LabeledStatement',
+                message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.'
+            },
+            {
+                selector: 'WithStatement',
+                message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.'
+            }
+        ],
+
+        'vue/object-curly-spacing': ['error', 'always'],
+
+        'vue/require-direct-export': 'off',
+
+        'vue/script-indent': 'off',
+
+        'vue/space-infix-ops': 'error',
+
+        // Require or disallow spaces before/after unary operators
+        // https://eslint.org/docs/rules/space-unary-ops
+        'vue/space-unary-ops': ['error', {
+            words: true,
+            nonwords: false
+        }],
+
+        'vue/v-on-function-call': ['error', 'never']
+    }
+};
