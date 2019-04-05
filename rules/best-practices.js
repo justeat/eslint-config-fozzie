@@ -3,7 +3,7 @@ module.exports = {
         // require default case in switch statements
         'default-case': ['error', { commentPattern: '^no default$' }],
 
-        'max-classes-per-file': ['error'],
+        'max-classes-per-file': 'error',
 
         // disallow reassignments of native objects or read-only globals
         // http://eslint.org/docs/rules/no-global-assign
@@ -28,6 +28,10 @@ module.exports = {
         // It was causing a bug when auto fix is correcting the code
         'no-else-return': ['error', {
             allowElseIf: true
-        }]
+        }],
+
+        'no-useless-catch': 'error',
+
+        'prefer-named-capture-group': 'off'
     }
 };

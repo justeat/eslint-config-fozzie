@@ -3,6 +3,22 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+
+v3.0.0
+------------------------------
+*April 5 2019*
+
+### Added
+- Vue ruleset. Extends the base JS linting config to also lint Vue `template` and `script` tags.
+
+### Changed
+- Updated `.eslintrc` to be `.eslintrc.js` in-line with deprecation of `.eslintrc` files.
+- Minor package updates
+
+### Removed
+- `prelint` npm script as not working properly anymore.
+
+
 v2.3.0
 ------------------------------
 *November 7 2018*

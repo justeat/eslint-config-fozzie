@@ -76,7 +76,7 @@ module.exports = {
         'one-var': 'off',
 
         // https://eslint.org/docs/rules/operator-linebreak
-        'operator-linebreak': ['off'],
+        'operator-linebreak': 'off',
 
         'padding-line-between-statements': 'off',
 
