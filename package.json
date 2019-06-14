@@ -1,6 +1,6 @@
 {
   "name": "@justeat/eslint-config-fozzie",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Just Eat's JS ESLint config, which follows our styleguide",
   "main": "index.js",
   "scripts": {
@@ -41,10 +41,10 @@
     "danger": "^3.8.8",
     "eslint": "^5.16.0",
     "eslint-find-rules": "^3.3.1",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-import": "^2.17.3",
     "in-publish": "^2.0.0",
     "safe-publish-latest": "^1.1.2",
-    "tape": "^4.10.1"
+    "tape": "^4.10.2"
   },
   "peerDependencies": {
     "eslint": "^5.0.1",
