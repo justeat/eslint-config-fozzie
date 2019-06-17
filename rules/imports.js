@@ -10,6 +10,8 @@ module.exports = {
 
         'import/no-relative-parent-imports': 'off',
 
-        'import/no-named-export': 'off'
+        'import/no-named-export': 'off',
+
+        'import/no-unused-modules': true
     }
 };
