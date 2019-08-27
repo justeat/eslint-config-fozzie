@@ -12,6 +12,6 @@ module.exports = {
 
         'import/no-named-export': 'off',
 
-        'import/no-unused-modules': true
+        'import/no-unused-modules': 'error'
     }
 };

@@ -4,6 +4,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
+v3.1.2
+------------------------------
+*August 27, 2019*
+
+### Fixed
+- `no-unused-modules` set to `error` rather than `true`
+
+
 v3.1.1
 ------------------------------
 *June 17, 2019*
