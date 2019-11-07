@@ -3,6 +3,8 @@ module.exports = {
         // require default case in switch statements
         'default-case': ['error', { commentPattern: '^no default$' }],
 
+        'default-param-last': 'off',
+
         'max-classes-per-file': 'error',
 
         // disallow reassignments of native objects or read-only globals
@@ -32,6 +34,8 @@ module.exports = {
 
         'no-useless-catch': 'error',
 
-        'prefer-named-capture-group': 'off'
+        'prefer-named-capture-group': 'off',
+
+        'prefer-regex-literals': 'off'
     }
 };

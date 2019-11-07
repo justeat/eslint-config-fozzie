@@ -1,13 +1,14 @@
 {
   "name": "@justeat/eslint-config-fozzie",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "Just Eat's JS ESLint config, which follows our styleguide",
   "main": "index.js",
   "scripts": {
     "lint": "eslint **/*.js",
+    "check-rules": "eslint-find-rules --unused",
     "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublishOnly": "(in-install || eslint-find-rules --unused) && (not-in-publish || yarn test) && safe-publish-latest",
-    "pretest": "yarn run lint",
+    "prepublishOnly": "(in-install || yarn check-rules) && (not-in-publish || yarn test) && safe-publish-latest",
+    "pretest": "yarn run lint && yarn check-rules",
     "test": "yarn run tests-only"
   },
   "repository": {

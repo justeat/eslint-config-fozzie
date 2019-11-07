@@ -16,6 +16,8 @@ module.exports = {
         // HTML custom elements spec (which requires that a dash is included in the name)
         'vue/component-name-in-template-casing': ['error', 'kebab-case'],
 
+        'vue/dot-location': ['error', 'property'],
+
         'vue/eqeqeq': ['error', 'always', { null: 'ignore' }],
 
         'vue/html-closing-bracket-newline': 'off',
@@ -28,10 +30,25 @@ module.exports = {
             mode: 'minimum'
         }],
 
+        'vue/keyword-spacing': ['error', {
+            before: true,
+            after: true,
+            overrides: {
+                return: { after: true },
+                throw: { after: true },
+                case: { after: true }
+            }
+        }],
+
         'vue/match-component-file-name': 'off',
 
         // https://github.com/vuejs/eslint-plugin-vue/blob/master/docs/rules/no-boolean-default.md
         'vue/no-boolean-default': 'off',
+
+        // https://vuejs.org/v2/api/#scope-removed
+        'vue/no-deprecated-scope-attribute': 'warn',
+
+        'vue/no-empty-pattern': 'error',
 
         // Copy of baseAIrbnb restricted-syntax ruleset
         // https://github.com/airbnb/javascript/blob/b85baeafed8b66fdd9756439a0b8774860147913/packages/eslint-config-airbnb-base/rules/style.js#L332-L352
@@ -70,6 +87,10 @@ module.exports = {
             nonwords: false
         }],
 
-        'vue/v-on-function-call': ['error', 'never']
+        'vue/v-on-function-call': ['error', 'never'],
+
+        'vue/v-slot-style': 'off',
+
+        'vue/valid-v-slot': 'error'
     }
 };
