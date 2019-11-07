@@ -1,3 +1,6 @@
 module.exports = {
-    extends: './index.js'
+    extends: './index.js',
+    rules: {
+        'import/no-unused-modules': 'off'
+    }
 }
