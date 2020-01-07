@@ -12,9 +12,15 @@ module.exports = {
 
         'vue/comma-dangle': ['error', 'never'],
 
+        'vue/component-definition-name-casing': 'error',
+
         // Use kebab-case for Vue component names, as then in-line with the
         // HTML custom elements spec (which requires that a dash is included in the name)
         'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+
+        'vue/component-tags-order': ['error', {
+            order: ['template', 'script', 'style']
+        }],
 
         'vue/dot-location': ['error', 'property'],
 
@@ -42,13 +48,23 @@ module.exports = {
 
         'vue/match-component-file-name': 'off',
 
+        'vue/max-len': 'off',
+
         // https://github.com/vuejs/eslint-plugin-vue/blob/master/docs/rules/no-boolean-default.md
         'vue/no-boolean-default': 'off',
 
         // https://vuejs.org/v2/api/#scope-removed
         'vue/no-deprecated-scope-attribute': 'warn',
 
+        'vue/no-deprecated-slot-attribute': 'error',
+
+        'vue/no-deprecated-slot-scope-attribute': 'error',
+
         'vue/no-empty-pattern': 'error',
+
+        'vue/no-irregular-whitespace': 'error',
+
+        'vue/no-reserved-component-names': 'error',
 
         // Copy of baseAIrbnb restricted-syntax ruleset
         // https://github.com/airbnb/javascript/blob/b85baeafed8b66fdd9756439a0b8774860147913/packages/eslint-config-airbnb-base/rules/style.js#L332-L352
@@ -72,9 +88,15 @@ module.exports = {
             }
         ],
 
+        'vue/no-static-inline-styles': 'error',
+
+        'vue/no-unsupported-features': 'error',
+
         'vue/object-curly-spacing': ['error', 'always'],
 
         'vue/require-direct-export': 'off',
+
+        'vue/require-name-property': 'off',
 
         'vue/script-indent': 'off',
 
@@ -87,9 +109,13 @@ module.exports = {
             nonwords: false
         }],
 
+        'vue/static-class-names-order': 'off',
+
         'vue/v-on-function-call': ['error', 'never'],
 
         'vue/v-slot-style': 'off',
+
+        'vue/valid-v-bind-sync': 'error',
 
         'vue/valid-v-slot': 'error'
     }
