@@ -3,6 +3,6 @@
     "config:base",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
-    ":semanticPrefixChore"
+    "commitMessagePrefix": "renovate -" 
   ]
 }
