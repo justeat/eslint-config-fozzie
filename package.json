@@ -46,7 +46,7 @@
     "eslint-plugin-import": "2.19.1",
     "in-publish": "2.0.0",
     "safe-publish-latest": "1.1.4",
-    "tape": "4.12.1"
+    "tape": "4.13.2"
   },
   "peerDependencies": {
     "eslint": "5.0.1",
