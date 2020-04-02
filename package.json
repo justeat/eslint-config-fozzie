@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/justeat/eslint-config-fozzie",
   "dependencies": {
-    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-airbnb-base": "14.1.0",
     "eslint-plugin-vue": "6.1.2"
   },
   "devDependencies": {
