@@ -2,14 +2,14 @@
 
 const bodyAndTitle = (danger.github.pr.body + danger.github.pr.title).toLowerCase();
 const isTrivial = bodyAndTitle.includes('#trivial');
+const isRenovate = danger.github.pr.title.startsWith('renovate');
 
-if (!isTrivial) {
+if (!isRenovate && !isTrivial) {
     // Fail if there isn’t a CHANGELOG entry – should update for every PR
     if (!danger.git.modified_files.includes('CHANGELOG.md')) {
         const changelogLink = 'https://github.com/justeat/eslint-config-fozzie/blob/master/CHANGELOG.md';
         fail(`:memo: Please include a CHANGELOG entry. You can find the current version at <a href="${changelogLink}">CHANGELOG.md</a>`);
     }
-
 
     // Check for version update
     const hasPackageJsonChanged = danger.git.modified_files.includes('package.json');
