@@ -37,7 +37,7 @@
     "eslint-plugin-vue": "6.1.2"
   },
   "devDependencies": {
-    "@babel/runtime": "7.7.7",
+    "@babel/runtime": "7.9.2",
     "babel-preset-airbnb": "4.4.0",
     "babel-tape-runner": "3.0.0",
     "danger": "3.8.8",
