@@ -3,12 +3,12 @@ module.exports = {
         es6: true
     },
     parserOptions: {
-        ecmaVersion: 6,
-        sourceType: 'module',
         ecmaFeatures: {
             generators: false,
             objectLiteralDuplicateProperties: false
-        }
+        },
+        ecmaVersion: 6,
+        sourceType: 'module'
     },
     rules: {
         // require parens in arrow function arguments

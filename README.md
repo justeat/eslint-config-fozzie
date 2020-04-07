@@ -47,7 +47,14 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+. It
   npm install --save-dev @justeat/eslint-config-fozzie eslint@^#.#.# eslint-plugin-import@^#.#.#
   ```
 
-2. Add `"extends": "@justeat/eslint-config-fozzie"` to your .eslintrc
+2. Add `"extends": "@justeat/eslint-config-fozzie"` to your `.eslintrc` file, which should look like this:
+```
+// Use this file as a starting point for your project's .eslintrc.js
+// Copy this file, and add rule overrides as needed.
+module.exports = {
+    extends: '@justeat/eslint-config-fozzie'
+}
+```
 
 
 ## Testing

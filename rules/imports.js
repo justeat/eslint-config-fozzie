@@ -1,16 +1,16 @@
 module.exports = {
     rules: {
-        'import/no-unresolved': [
-            'error',
-            {
-                commonjs: true,
-                caseSensitive: false
-            }
-        ],
+        'import/no-named-export': 'off',
 
         'import/no-relative-parent-imports': 'off',
 
-        'import/no-named-export': 'off',
+        'import/no-unresolved': [
+            'error',
+            {
+                caseSensitive: false,
+                commonjs: true
+            }
+        ],
 
         'import/no-unused-modules': 'off'
     }
