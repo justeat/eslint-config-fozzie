@@ -14,9 +14,9 @@ resolvedExtends.unshift('plugin:vue/recommended');
 module.exports = {
     env: {
         browser: true,
-        node: true,
         es6: true,
-        jest: true
+        jest: true,
+        node: true
     },
     extends: resolvedExtends,
     parserOptions: {

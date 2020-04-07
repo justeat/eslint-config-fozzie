@@ -2,7 +2,7 @@ module.exports = {
     rules: {
         'vue/array-bracket-spacing': ['error', 'never'],
 
-        'vue/arrow-spacing': ['error', { before: true, after: true }],
+        'vue/arrow-spacing': ['error', { after: true, before: true }],
 
         'vue/block-spacing': ['error', 'always'],
 
@@ -31,18 +31,18 @@ module.exports = {
         'vue/html-indent': ['error', 4],
 
         'vue/key-spacing': ['error', {
-            beforeColon: false,
             afterColon: true,
+            beforeColon: false,
             mode: 'minimum'
         }],
 
         'vue/keyword-spacing': ['error', {
-            before: true,
             after: true,
+            before: true,
             overrides: {
+                case: { after: true },
                 return: { after: true },
-                throw: { after: true },
-                case: { after: true }
+                throw: { after: true }
             }
         }],
 
@@ -71,20 +71,20 @@ module.exports = {
         'vue/no-restricted-syntax': [
             'error',
             {
-                selector: 'ForInStatement',
-                message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.'
+                message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+                selector: 'ForInStatement'
             },
             {
-                selector: 'ForOfStatement',
-                message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.'
+                message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
+                selector: 'ForOfStatement'
             },
             {
-                selector: 'LabeledStatement',
-                message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.'
+                message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+                selector: 'LabeledStatement'
             },
             {
-                selector: 'WithStatement',
-                message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.'
+                message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+                selector: 'WithStatement'
             }
         ],
 
@@ -94,19 +94,23 @@ module.exports = {
 
         'vue/object-curly-spacing': ['error', 'always'],
 
+        'vue/padding-line-between-blocks': ['error', 'always'],
+
         'vue/require-direct-export': 'off',
 
         'vue/require-name-property': 'off',
 
         'vue/script-indent': 'off',
 
+        'vue/sort-keys': ['error', 'asc'],
+
         'vue/space-infix-ops': 'error',
 
         // Require or disallow spaces before/after unary operators
         // https://eslint.org/docs/rules/space-unary-ops
         'vue/space-unary-ops': ['error', {
-            words: true,
-            nonwords: false
+            nonwords: false,
+            words: true
         }],
 
         'vue/static-class-names-order': 'off',
@@ -117,10 +121,6 @@ module.exports = {
 
         'vue/valid-v-bind-sync': 'error',
 
-        'vue/valid-v-slot': 'error',
-
-        "vue/padding-line-between-blocks": ["error", "always"],
-
-        "sort-keys": ["error", "asc"]
+        'vue/valid-v-slot': 'error'
     }
 };

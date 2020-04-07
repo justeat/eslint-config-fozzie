@@ -30,16 +30,16 @@ module.exports = {
             props: false
         }],
 
+        'no-setter-return': 'error',
+
         // disallow usage of expressions in statement position
         'no-unused-expressions': ['error', {
             allowShortCircuit: false,
-            allowTernary: false,
-            allowTaggedTemplates: false
+            allowTaggedTemplates: false,
+            allowTernary: false
         }],
 
         'no-useless-catch': 'error',
-
-        'no-setter-return': 'error',
 
         'prefer-exponentiation-operator': 'error',
 

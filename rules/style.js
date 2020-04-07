@@ -14,30 +14,31 @@ module.exports = {
 
         'function-paren-newline': ['error', 'multiline'],
 
+        'import/no-anonymous-default-export': 'off',
         // this option sets a specific tab width for your code
         // http://eslint.org/docs/rules/indent
         indent: ['error', 4, {
+            FunctionDeclaration: {
+                body: 1,
+                parameters: 1
+            },
+
+            FunctionExpression: {
+                body: 1,
+                parameters: 1
+            },
+
+            MemberExpression: 'off',
             SwitchCase: 1,
             VariableDeclarator: 1,
-            outerIIFEBody: 1,
-            MemberExpression: 'off',
-            // CallExpression: {
-            // parameters: null,
-            // },
-            FunctionDeclaration: {
-                parameters: 1,
-                body: 1
-            },
-            FunctionExpression: {
-                parameters: 1,
-                body: 1
-            }
+
+            outerIIFEBody: 1
         }],
 
         // enforces spacing between keys and values in object literal properties
         'key-spacing': ['error', {
-            beforeColon: false,
             afterColon: true,
+            beforeColon: false,
             mode: 'minimum'
         }],
 
@@ -48,11 +49,11 @@ module.exports = {
         // specify the maximum length of a line in your program
         // http://eslint.org/docs/rules/max-len
         'max-len': ['error', 200, 4, {
-            ignoreUrls: true,
             ignoreComments: false,
             ignoreRegExpLiterals: true,
             ignoreStrings: true,
-            ignoreTemplateLiterals: true
+            ignoreTemplateLiterals: true,
+            ignoreUrls: true
         }],
 
         'max-lines-per-function': 'off',
@@ -61,8 +62,6 @@ module.exports = {
         // more readable and easy to maintain
         // http://eslint.org/docs/rules/newline-per-chained-call
         'newline-per-chained-call': ['error', { ignoreChainWithDepth: 4 }],
-
-        'import/no-anonymous-default-export': 'off',
 
         // disallow multiple empty lines and only one newline at the end
         'no-multiple-empty-lines': ['error', { max: 4 }],
@@ -84,26 +83,26 @@ module.exports = {
 
         'prefer-object-spread': 'error',
 
+        'semi-style': ['error', 'last'],
+
         // require or disallow space before function opening parenthesis
         // http://eslint.org/docs/rules/space-before-function-paren
         'space-before-function-paren': ['error', {
             anonymous: 'always',
-            named: 'always',
-            asyncArrow: 'always'
+            asyncArrow: 'always',
+            named: 'always'
         }],
-
-        'semi-style': ['error', 'last'],
 
         // require or disallow a space immediately following the // or /* in a comment
         // http://eslint.org/docs/rules/spaced-comment
         'spaced-comment': ['error', 'always', {
+            block: {
+                balanced: false,
+                exceptions: ['-', '*']
+            },
             line: {
                 exceptions: ['-', '*'],
                 markers: ['global']
-            },
-            block: {
-                exceptions: ['-', '*'],
-                balanced: false
             }
         }],
 
