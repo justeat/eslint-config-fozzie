@@ -117,6 +117,10 @@ module.exports = {
 
         'vue/valid-v-bind-sync': 'error',
 
-        'vue/valid-v-slot': 'error'
+        'vue/valid-v-slot': 'error',
+
+        "vue/padding-line-between-blocks": ["error", "always"],
+
+        "sort-keys": ["error", "asc"]
     }
 };
