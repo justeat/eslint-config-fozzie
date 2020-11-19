@@ -32,7 +32,9 @@ module.exports = {
             SwitchCase: 1,
             VariableDeclarator: 1,
 
-            outerIIFEBody: 1
+            outerIIFEBody: 1,
+
+            ignoredNodes: ['TemplateLiteral']
         }],
 
         // enforces spacing between keys and values in object literal properties
