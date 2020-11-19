@@ -3,6 +3,15 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+
+v3.5.0
+------------------------------
+*November 20, 2020*
+
+### Fixed
+- Ignore template literals in `indent` rule as this can [cause "Cannot read property 'range' of null" errors](https://github.com/babel/babel-eslint/issues/681#issuecomment-652333293).
+
+
 v3.4.1
 ------------------------------
 *April 4, 2020*
