@@ -11,7 +11,7 @@ v4.0.0
 ### Changed
 - Updated npm dependencies including bump of eslint to v7.
 - Updated peer dependencies to accept ranges rather than fixed versions.
-- Bumped minimum supported version of node to version 8+.
+- Bumped minimum supported version of node to version 10+.
 - Updated license year.
 
 ### Added
