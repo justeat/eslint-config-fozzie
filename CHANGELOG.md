@@ -4,6 +4,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
+v4.0.0
+------------------------------
+*November 27, 2020*
+
+### Changed
+- Updated npm dependencies including bump of eslint to v7.
+- Updated peer dependencies to accept ranges rather than fixed versions.
+- Bumped minimum supported version of node to version 8+.
+- Updated license year.
+
+### Added
+- `--report-unused-disable-directives` flag when linting to match the `eslint-config-airbnb-base` build scripts.
+- Missing rule definitions.
+
+
 v3.5.0
 ------------------------------
 *November 20, 2020*

@@ -23,6 +23,8 @@ module.exports = {
         // http://eslint.org/docs/rules/no-global-assign
         'no-global-assign': ['error', { exceptions: [] }],
 
+        'no-nonoctal-decimal-escape': 'error',
+
         // disallow reassignment of function parameters
         // disallow parameter object manipulation except for specific exclusions
         // rule: http://eslint.org/docs/rules/no-param-reassign.html
