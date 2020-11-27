@@ -1,15 +1,15 @@
 {
   "name": "@justeat/eslint-config-fozzie",
-  "version": "3.5.0",
+  "version": "4.0.0",
   "description": "Just Eat's JS ESLint config, which follows our styleguide",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/*.js",
+    "lint": "eslint --report-unused-disable-directives **/*.js",
     "check-rules": "eslint-find-rules --unused",
     "tests-only": "babel-tape-runner ./test/test-*.js",
     "prepublishOnly": "(in-install || yarn check-rules) && (not-in-publish || yarn test) && safe-publish-latest",
-    "pretest": "yarn run lint && yarn check-rules",
-    "test": "yarn run tests-only"
+    "pretest": "yarn lint && yarn check-rules",
+    "test": "yarn tests-only"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "eslintconfig",
     "config",
     "justeat",
+    "fozzie",
     "javascript",
     "styleguide"
   ],
@@ -33,26 +34,27 @@
   },
   "homepage": "https://github.com/justeat/eslint-config-fozzie",
   "dependencies": {
-    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-config-airbnb-base": "14.2.1",
     "eslint-plugin-vue": "6.2.2"
   },
   "devDependencies": {
-    "@babel/runtime": "7.9.2",
+    "@babel/core": "7.12.9",
+    "@babel/runtime": "7.12.5",
     "babel-preset-airbnb": "5.0.0",
     "babel-tape-runner": "3.0.0",
-    "danger": "10.1.0",
-    "eslint": "6.8.0",
-    "eslint-find-rules": "3.4.0",
-    "eslint-plugin-import": "2.20.2",
+    "danger": "10.5.3",
+    "eslint": "7.14.0",
+    "eslint-find-rules": "3.6.1",
+    "eslint-plugin-import": "2.22.1",
     "in-publish": "2.0.1",
     "safe-publish-latest": "1.1.4",
-    "tape": "4.13.2"
+    "tape": "5.0.1"
   },
   "peerDependencies": {
-    "eslint": "6.8.0",
-    "eslint-plugin-import": "2.20.2"
+    "eslint": "^6.8.0 || ^7.2.0",
+    "eslint-plugin-import": "^2.22.1"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 10"
   }
 }
